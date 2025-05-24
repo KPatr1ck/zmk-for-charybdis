@@ -10,6 +10,94 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        ParaLeft {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <6 7>;
+            timeout-ms = <50>;
+            slow-release;
+        };
+
+        ParaRight {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <8 9>;
+            timeout-ms = <50>;
+            slow-release;
+        };
+
+        BrakLeft {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <26 27>;
+            timeout-ms = <50>;
+            slow-release;
+        };
+
+        BrakRight {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <28 29>;
+            timeout-ms = <50>;
+            slow-release;
+        };
+
+        Esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+            timeout-ms = <50>;
+            slow-release;
+        };
+
+        Tab {
+            bindings = <&kp TAB>;
+            key-positions = <10 11>;
+            timeout-ms = <50>;
+            slow-release;
+        };
+
+        Colon {
+            bindings = <&kp COLON>;
+            key-positions = <12 13>;
+            timeout-ms = <50>;
+            slow-release;
+        };
+
+        Quote {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <18 19>;
+            timeout-ms = <50>;
+            slow-release;
+        };
+
+        Enter {
+            bindings = <&kp ENTER>;
+            key-positions = <16 17>;
+            timeout-ms = <50>;
+            slow-release;
+        };
+
+        Ctrl_A {
+            bindings = <&kp LC(A)>;
+            key-positions = <10 22>;
+            timeout-ms = <50>;
+            slow-release;
+        };
+
+        Ctrl_Z {
+            bindings = <&kp LC(Z)>;
+            key-positions = <22 20>;
+            timeout-ms = <50>;
+            slow-release;
+        };
+
+        Ctrl_Q {
+            bindings = <&kp LC(Q)>;
+            key-positions = <22 0>;
+            timeout-ms = <50>;
+            slow-release;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
