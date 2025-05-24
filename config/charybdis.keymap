@@ -9,6 +9,12 @@
     quick-tap-ms = <150>;
 };
 
+&mt {
+    tapping-term-ms = <120>;
+    quick-tap-ms = <100>;
+    flavor = "balanced";
+};
+
 / {
     combos {
         compatible = "zmk,combos";
